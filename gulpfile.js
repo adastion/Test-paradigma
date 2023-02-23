@@ -171,39 +171,39 @@ const fonts = () => {
   return gulp.src(path.src.fonts).pipe(gulp.dest(path.build.fonts)).pipe(browsersync.stream());
 };
 
-const svgSpriteBuild = () => {
-  return gulp
-    .src('src/images/svg/*.svg')
-    .pipe(
-      svgmin({
-        js2svg: {
-          pretty: true,
-        },
-      }),
-    )
-    .pipe(
-      cheerio({
-        run: ($) => {
-          $('[fill]').removeAttr('fill');
-          $('[stroke]').removeAttr('stroke');
-          $('[style]').removeAttr('style');
-        },
-        parserOptions: { xmlMode: true },
-      }),
-    )
-    .pipe(replace('&gt;', '>'))
-    .pipe(
-      svgSprite({
-        mode: {
-          symbol: {
-            example: false,
-            sprite: '../sprite.svg',
-          },
-        },
-      }),
-    )
-    .pipe(gulp.dest('docs/images/'));
-};
+// const svgSpriteBuild = () => {
+//   return gulp
+//     .src('src/images/svg/*.svg')
+//     .pipe(
+//       svgmin({
+//         js2svg: {
+//           pretty: true,
+//         },
+//       }),
+//     )
+//     .pipe(
+//       cheerio({
+//         run: ($) => {
+//           $('[fill]').removeAttr('fill');
+//           $('[stroke]').removeAttr('stroke');
+//           $('[style]').removeAttr('style');
+//         },
+//         parserOptions: { xmlMode: true },
+//       }),
+//     )
+//     .pipe(replace('&gt;', '>'))
+//     .pipe(
+//       svgSprite({
+//         mode: {
+//           symbol: {
+//             example: false,
+//             sprite: '../sprite.svg',
+//           },
+//         },
+//       }),
+//     )
+//     .pipe(gulp.dest('docs/images/'));
+// };
 
 function watcher() {
   gulp.watch(path.watch.html, html);
@@ -214,12 +214,12 @@ function watcher() {
 }
 
 const mainTasks = gulp.parallel(html, scss, js, images, fonts);
-const sprite = gulp.series(svgSpriteBuild);
+// const sprite = gulp.series(svgSpriteBuild);
 
 // Построение сценариев выполнение задач
-const dev = gulp.series(reset, sprite, mainTasks, gulp.parallel(watcher, server));
+const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 
-export { sprite };
+// export { sprite };
 
 // Выполнение сценария
 gulp.task('default', dev);

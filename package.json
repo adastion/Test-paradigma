@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "sp": "gulp sprite"
-  },
+
   "author": "adastion",
   "license": "ISC",
   "devDependencies": {
