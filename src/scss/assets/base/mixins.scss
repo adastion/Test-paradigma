@@ -1,0 +1,52 @@
+@mixin primary-copy-font {
+  font-family: 'Manrope', sans-serif;
+}
+
+@mixin pading-desktop-and-bigger {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin big-desktop-and-bigger {
+  @media (min-width: 1099px) {
+    @content;
+  }
+}
+
+@mixin desktop-and-bigger {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin small-desktop-and-bigger {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet-and-bigger {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+
+@mixin phone-and-bigger {
+  @media (min-width: 544px) {
+    @content;
+  }
+}
+
+@mixin phone-and-less {
+  @media (max-width: 545px) {
+    @content;
+  }
+}
+
+@mixin small-phone-and-bigger {
+  @media (min-width: 425px) {
+    @content;
+  }
+}
