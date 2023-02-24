@@ -124,34 +124,3 @@ html {
 .not-scroll {
   overflow: hidden;
 }
-
-.background {
-  background: url("../images/bg.jpg") no-repeat;
-  height: 120.8222811671vh;
-  width: 115.8854166667vw;
-}
-
-.container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 5fr;
-  grid-template-columns: 1fr 5fr;
-  margin: 0 auto;
-}
-
-.header {
-  display: -ms-grid;
-  display: grid;
-  gap: 1.4973958333vw;
-}
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-}
-.contacts__text {
-  font-size: 0.578vw;
-}
