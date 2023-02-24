@@ -7,6 +7,10 @@ html {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
 
 .visually-hidden {
   position: absolute;

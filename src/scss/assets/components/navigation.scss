@@ -1,0 +1,20 @@
+.navigation {
+
+  &__list {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 22px;
+  }
+  
+  &__link {
+    color: $nav_text;
+
+    &:hover {
+      color: $link_hover;
+    }
+  }
+}

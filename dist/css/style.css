@@ -106,11 +106,18 @@ select {
 }
 html {
   font-family: "Manrope", sans-serif;
-  color: #283136;
+  color: #000000;
   font-size: 16px;
   font-weight: normal;
   line-height: normal;
   height: 100%;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .visually-hidden {
@@ -123,4 +130,75 @@ html {
 
 .not-scroll {
   overflow: hidden;
+}
+
+.container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 140px;
+}
+
+.header {
+  border-left: 1px solid #2A2A2A;
+}
+.header__info {
+  border-bottom: 1px solid #2A2A2A;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 22px;
+}
+.navigation__link {
+  color: #2A2A2A;
+}
+.navigation__link:hover {
+  color: #CB2720;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: none;
+  color: #2A2A2A;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn::after {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  border-bottom: 2px dotted #CB2720;
+}
+.btn:hover::after {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
 }

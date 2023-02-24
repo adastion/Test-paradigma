@@ -2,11 +2,12 @@
 // Calc( (100vw - Vmin px)/(Vmax - Vmin) * (Fmax - Fmin) + Fmin px);
 
 $black: #000000;
-$pickled_bluewood_text: #283136;
 $white: #ffffff;
+$nav_text: #2A2A2A;
+$link_hover: #CB2720;
 
 // Body
-$base-text-color: $pickled_bluewood_text;
+$base-text-color: $black;
 $secondary-text-color: $black;
 
 // Headings
