@@ -1,0 +1,10 @@
+.icons {
+  &--wa {
+    position: absolute;
+    left: 31px;
+    width: 30px;
+    height: 30px;
+    fill: $wa;
+    transition: transform 0.3s;
+  }
+}
