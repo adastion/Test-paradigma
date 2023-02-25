@@ -5,4 +5,14 @@
   &__info {
     border-bottom: 1px solid $nav_text;
   }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+
+    & p {
+      max-width: 134px;
+    }
+  }
 }

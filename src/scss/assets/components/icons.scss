@@ -1,10 +1,11 @@
 .icons {
+  position: absolute;
+  left: 31px;
+  fill: $wa;
+  
   &--wa {
-    position: absolute;
-    left: 31px;
+    transition: transform 0.3s;
     width: 30px;
     height: 30px;
-    fill: $wa;
-    transition: transform 0.3s;
   }
 }

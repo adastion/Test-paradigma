@@ -152,6 +152,18 @@ a {
 .header__info {
   border-bottom: 1px solid #2A2A2A;
 }
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 23px;
+}
+.header__logo p {
+  max-width: 134px;
+}
 
 .navigation__list {
   display: -webkit-box;
@@ -285,15 +297,68 @@ a {
           transform: scale(1.1);
 }
 
-.icons--wa {
+.icons {
   position: absolute;
   left: 31px;
-  width: 30px;
-  height: 30px;
   fill: #20C863;
+}
+.icons--wa {
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   -o-transition: transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+  width: 30px;
+  height: 30px;
+}
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 57px;
+}
+.advantages__item--social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+.advantages__item--social p {
+  max-width: 100px;
+}
+.advantages__item p {
+  max-width: 157px;
+}
+.advantages__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+}
+.advantages__social-wa, .advantages__social-tg, .advantages__social-viber {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.advantages__social-wa {
+  background: #20C863;
+}
+.advantages__social-tg {
+  background: #2FB3F3;
+}
+.advantages__social-viber {
+  background: #776EE9;
 }
