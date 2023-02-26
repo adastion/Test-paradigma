@@ -5,13 +5,28 @@
 
   &__item {
     display: flex;
+    justify-content: center;
     max-width: vw(200);
   }
 
   &__icon {
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: vw(35);
+    height: vw(35);
+    border-radius: 50%;
+    overflow: hidden;
 
-  &__icon--min-map {
+    &--min-map {
+      background: url('../images/Карта.png') no-repeat;
+
+      & svg {
+        fill: $dotted;
+        width: vw(6.06);
+        height: vw(7.4);
+      }
+    }
   }
 
   &__icon--calc {

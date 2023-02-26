@@ -1,5 +1,32 @@
 .content {
   width: vw(1780);
   height: vw(911);
-  background: url('../images/bg.jpg')no-repeat;
+  background: url('../images/bg.jpg') no-repeat;
+  color: $white;
+  padding-left: vw(115);
+  padding-top: vw(128);
+
+  &__wrap {
+    display: grid;
+    gap: vw(45);
+  }
+
+  &__title {
+    font-size: vw(65);
+    line-height: vw(95);
+    letter-spacing: 2%;
+    font-weight: normal;
+    max-width: vw(1011);
+  }
+  
+  &__subtitle {
+    font-size: vw(27);
+    line-height: vw(45);
+    letter-spacing: 2%;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: vw(25);
+  }
 }

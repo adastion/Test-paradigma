@@ -1,10 +1,10 @@
 .header {
   font-size: vw(11);
-  border-left: vw(2) solid $nav_text;
+  border-left: vw(2) solid rgba($nav_text, 0.2);
 
   &__info {
     display: flex;
-    border-bottom: vw(2) solid $nav_text;
+    border-bottom: vw(2) solid rgba($nav_text, 0.2);
     padding: vw(27) 0;
   }
 
