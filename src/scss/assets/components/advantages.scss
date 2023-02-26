@@ -1,48 +1,37 @@
 .advantages {
   display: flex;
   align-items: center;
-  gap: 57px;
+  font-size: vw(11);
 
   &__item {
-    &--social {
-      display: flex;
-      gap: 24px;
+    display: flex;
+    max-width: vw(200);
+  }
 
-      & p {
-        max-width: 100px;
-      }
-    }
+  &__icon {
+  }
 
-    & p {
-      max-width: 157px;
-    }
+  &__icon--min-map {
+  }
+
+  &__icon--calc {
+  }
+
+  &__wrap-btn {
+  }
+
+  &__item--social {
   }
 
   &__social {
-    display: flex;
-    gap: 6px;
-  }
-
-  &__social-wa,
-  &__social-tg,
-  &__social-viber {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   &__social-wa {
-    background: $wa;
   }
 
   &__social-tg {
-    background: $tg;
   }
 
   &__social-viber {
-    background: $viber;
   }
 }

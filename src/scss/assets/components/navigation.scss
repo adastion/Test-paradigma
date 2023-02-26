@@ -2,12 +2,12 @@
 
   &__list {
     display: flex;
-    gap: 70px;
+    gap: vw(65);
     align-items: center;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: vw(12);
     font-weight: 600;
-    padding: 22px;
+    padding: vw(22);
   }
   
   &__link {

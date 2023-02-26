@@ -1,18 +1,21 @@
 .header {
-  font-size: 11px;
-  border-left: 1px solid $nav_text;
+  font-size: vw(11);
+  border-left: vw(2) solid $nav_text;
 
   &__info {
-    border-bottom: 1px solid $nav_text;
+    display: flex;
+    border-bottom: vw(2) solid $nav_text;
+    padding: vw(27) 0;
   }
 
   &__logo {
     display: flex;
     align-items: center;
-    gap: 23px;
+    gap: vw(23);
+    max-width: vw(370);
+  }
 
-    & p {
-      max-width: 134px;
-    }
+  &__text {
+    max-width: vw(134);
   }
 }
