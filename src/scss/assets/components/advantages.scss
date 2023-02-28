@@ -1,52 +1,18 @@
 .advantages {
+  font-size: vw(17);
+  line-height: vw(27);
   display: flex;
-  align-items: center;
-  font-size: vw(11);
+  margin-top: auto;
 
   &__item {
-    display: flex;
-    justify-content: center;
-    max-width: vw(200);
-  }
+    padding: vw(34) vw(95);
 
-  &__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: vw(35);
-    height: vw(35);
-    border-radius: 50%;
-    overflow: hidden;
-
-    &--min-map {
-      background: url('../images/Карта.png') no-repeat;
-
-      & svg {
-        fill: $dotted;
-        width: vw(6.06);
-        height: vw(7.4);
-      }
+    &:first-child {
+      padding-left: 0;
     }
-  }
 
-  &__icon--calc {
-  }
-
-  &__wrap-btn {
-  }
-
-  &__item--social {
-  }
-
-  &__social {
-  }
-
-  &__social-wa {
-  }
-
-  &__social-tg {
-  }
-
-  &__social-viber {
+    &:not(:last-child) {
+      border-right: vw(2) solid darken($white, 55%);
+    }
   }
 }

@@ -2,9 +2,9 @@
   width: vw(1780);
   height: vw(911);
   background: url('../images/bg.jpg') no-repeat;
+  background-size: cover;
   color: $white;
-  padding-left: vw(115);
-  padding-top: vw(128);
+  padding: vw(115) vw(128) 0;
 
   &__wrap {
     display: grid;
@@ -18,7 +18,7 @@
     font-weight: normal;
     max-width: vw(1011);
   }
-  
+
   &__subtitle {
     font-size: vw(27);
     line-height: vw(45);
