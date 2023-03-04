@@ -135,33 +135,31 @@ a {
 .container {
   position: relative;
   padding-left: 9.7222222222vw;
-  max-width: 1920px;
 }
 
 .content {
-  width: 123.6111111111vw;
-  height: 63.2638888889vw;
   background: url("../images/bg.jpg") no-repeat;
   background-size: cover;
   color: #ffffff;
-  padding: 7.9861111111vw 8.8888888889vw 0;
+  padding-top: 8.8888888889vw;
+  padding-left: 8.8888888889vw;
+  max-width: 123.6111111111vw;
 }
 .content__wrap {
   display: -ms-grid;
   display: grid;
   gap: 3.125vw;
+  max-width: 70.2083333333vw;
 }
 .content__title {
   font-size: 4.5138888889vw;
   line-height: 6.5972222222vw;
-  letter-spacing: 2%;
   font-weight: normal;
   max-width: 70.2083333333vw;
 }
 .content__subtitle {
   font-size: 1.875vw;
   line-height: 3.125vw;
-  letter-spacing: 2%;
 }
 .content__buttons {
   display: -webkit-box;
@@ -416,21 +414,32 @@ a {
 }
 
 .advantages {
-  font-size: 1.1805555556vw;
-  line-height: 1.875vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: auto;
+  font-size: 1.1111111111vw;
+  line-height: 1.875vw;
+  margin-top: 8.6111111111vw;
 }
 .advantages__item {
-  padding: 2.3611111111vw 6.5972222222vw;
+  position: relative;
+  padding: 0 6.5972222222vw;
+  padding-top: 2.0833333333vw;
 }
 .advantages__item:first-child {
   padding-left: 0;
 }
+.advantages__item:last-child {
+  padding-right: 0;
+}
 .advantages__item:not(:last-child) {
   border-right: 0.1388888889vw solid #737373;
+}
+.advantages__icon {
+  position: absolute;
+  top: 0;
+  width: 0.9722222222vw;
+  height: 0.6944444444vw;
 }
 
 .contacts {

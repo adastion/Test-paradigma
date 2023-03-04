@@ -1,18 +1,31 @@
 .advantages {
-  font-size: vw(17);
-  line-height: vw(27);
   display: flex;
-  margin-top: auto;
+  font-size: vw(16);
+  line-height: vw(27);
+  margin-top: vw(124);
 
   &__item {
-    padding: vw(34) vw(95);
+    position: relative;
+    padding: 0 vw(95);
+    padding-top: vw(30);
 
     &:first-child {
       padding-left: 0;
     }
 
+    &:last-child {
+      padding-right: 0;
+    }
+
     &:not(:last-child) {
       border-right: vw(2) solid darken($white, 55%);
     }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    width: vw(14);
+    height: vw(10);
   }
 }
