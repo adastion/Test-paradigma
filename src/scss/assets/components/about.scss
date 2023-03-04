@@ -30,9 +30,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 35px;
-      height: 35px;
+      width: vw(35);
+      height: vw(35);
       border-radius: 50%;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     & svg {

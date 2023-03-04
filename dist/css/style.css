@@ -171,6 +171,7 @@ a {
 .header {
   font-size: 0.7638888889vw;
   border-left: 0.1388888889vw solid rgba(42, 42, 42, 0.2);
+  padding-right: 9.5138888889vw;
 }
 .header__info {
   display: -webkit-box;
@@ -187,7 +188,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.5972222222vw;
-  max-width: 25.6944444444vw;
+  min-width: 25.6944444444vw;
 }
 .header__text {
   max-width: 9.3055555556vw;
@@ -384,9 +385,14 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 35px;
-  height: 35px;
+  width: 2.4305555556vw;
+  height: 2.4305555556vw;
   border-radius: 50%;
+}
+.about__social a:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .about__social svg {
   fill: #ffffff;
@@ -423,8 +429,7 @@ a {
 }
 .advantages__item {
   position: relative;
-  padding: 0 6.5972222222vw;
-  padding-top: 2.0833333333vw;
+  padding: 2.0833333333vw 4.375vw;
 }
 .advantages__item:first-child {
   padding-left: 0;
