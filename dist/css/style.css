@@ -142,12 +142,21 @@ a {
 .content {
   background: url("../images/bg.jpg") no-repeat;
   background-size: cover;
-  height: 63.2638888889vw;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
+  padding: 8.8888888889vw 7.9861111111vw;
 }
-
+.content * {
+  color: #ffffff;
+}
+.content__title {
+  font-size: 4.5138888889vw;
+  font-weight: 400;
+}
+.content__subtitle {
+  font-size: 1.875vw;
+}
 .header {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
