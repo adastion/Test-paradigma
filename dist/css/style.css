@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Box sizing rules */
 *,
 *::before,
@@ -157,10 +158,19 @@ a {
 .content__subtitle {
   font-size: 1.875vw;
 }
+.content__btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+}
+.header__logo {
+  width: 14.7916666667vw;
 }
 
 .navigation {
@@ -179,5 +189,112 @@ a {
           justify-content: space-between;
 }
 .navigation__link {
+  color: #2A2A2A;
+}
+
+.info {
+  font-size: 0.7638888889vw;
+  padding: 1.5277777778vw 0;
+}
+.info__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 0.6944444444vw;
+}
+.info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.info__item > p, .info__item > a {
+  max-width: 9.3055555556vw;
+}
+.info__item--contacts {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 13.9583333333vw;
+}
+.info__icon {
+  max-width: 100%;
+  width: 2.4305555556vw;
+  height: 2.4305555556vw;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.info__icon svg {
+  width: 0.9027777778vw;
+  height: 0.9027777778vw;
+}
+.info__icon--bg, .info__icon--not-bg, .info__icon--calc {
+  fill: #FD2016;
+}
+.info__icon--bg {
+  background: url("../images/Карта.png");
+}
+.info__icon--bg svg {
+  width: 0.4208333333vw;
+  height: 0.5138888889vw;
+}
+.info__icon--not-bg {
+  width: auto;
+  height: auto;
+}
+.info__icon--not-bg svg {
+  width: 0.8333333333vw;
+  height: 1.0416666667vw;
+}
+.info__icon--calc {
+  background: #F8F8F8;
+}
+.info__icon--calc svg {
+  width: 1.0416666667vw;
+  height: 1.0416666667vw;
+}
+.info__icon--wa, .info__icon--telegram, .info__icon--viber {
+  fill: #ffffff;
+}
+.info__icon--wa svg {
+  width: 0.9430555556vw;
+  height: 0.9423611111vw;
+}
+.info__icon--telegram svg {
+  width: 0.8875vw;
+  height: 0.7208333333vw;
+}
+.info__icon--viber svg {
+  width: 0.8875vw;
+  height: 0.9979166667vw;
+}
+.info__tel {
+  font-size: 1.3888888889vw;
+  font-weight: 700;
   color: #2A2A2A;
 }

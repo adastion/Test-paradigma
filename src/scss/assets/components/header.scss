@@ -1,3 +1,7 @@
 .header {
   grid-column: 2/3;
+
+  &__logo {
+    width: vw(213);
+  }
 }

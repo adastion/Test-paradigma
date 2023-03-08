@@ -1,0 +1,116 @@
+.info {
+  font-size: vw(11);
+  padding: vw(22) 0;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    gap: 0 vw(10);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    & > p,
+    & > a {
+      max-width: vw(134);
+    }
+
+    &--contacts {
+      flex-direction: column;
+      justify-content: center;
+      max-width: vw(201);
+    }
+  }
+
+  &__icon {
+    max-width: 100%;
+    width: vw(35);
+    height: vw(35);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & svg {
+      width: vw(13);
+      height: vw(13);
+    }
+
+    &--bg,
+    &--not-bg,
+    &--calc {
+      fill: $scarlet;
+    }
+
+    &--bg {
+      background: url("../images/Карта.png");
+
+      & svg {
+        width: vw(6.06);
+        height: vw(7.4);
+      }
+    }
+
+    &--not-bg {
+      width: auto;
+      height: auto;
+
+      & svg {
+        width: vw(12);
+        height: vw(15);
+      }
+    }
+
+    &--calc {
+      background: $alabaster;
+
+      & svg {
+        width: vw(15);
+        height: vw(15);
+      }
+    }
+
+    &--wa,
+    &--telegram,
+    &--viber {
+      fill: $white;
+    }
+
+    &--wa {
+      & svg {
+        width: vw(13.58);
+        height: vw(13.57);
+      }
+    }
+
+    &--telegram {
+      & svg {
+        width: vw(12.78);
+        height: vw(10.38);
+      }
+    }
+
+    &--viber {
+      & svg {
+        width: vw(12.78);
+        height: vw(14.37);
+      }
+    }
+  }
+
+  &__chedule {
+  }
+
+  &__tel {
+    font-size: vw(20);
+    font-weight: 700;
+    color: $mine_shaft;
+  }
+}
