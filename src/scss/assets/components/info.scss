@@ -16,32 +16,23 @@
   &__item {
     display: flex;
     align-items: center;
-
-    & > p,
-    & > a {
-      max-width: vw(134);
-    }
+    gap: 0 vw(10);
 
     &--contacts {
       flex-direction: column;
       justify-content: center;
-      max-width: vw(201);
+      width: vw(301);
     }
   }
 
   &__icon {
-    max-width: 100%;
     width: vw(35);
     height: vw(35);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    & svg {
-      width: vw(13);
-      height: vw(13);
-    }
+    flex: 0 0 vw(35);
 
     &--bg,
     &--not-bg,
@@ -84,6 +75,8 @@
     }
 
     &--wa {
+      background: $mountain_meadow;
+
       & svg {
         width: vw(13.58);
         height: vw(13.57);
@@ -91,6 +84,8 @@
     }
 
     &--telegram {
+      background: $picton_blue;
+
       & svg {
         width: vw(12.78);
         height: vw(10.38);
@@ -98,6 +93,8 @@
     }
 
     &--viber {
+      background: $cornflower_blue;
+
       & svg {
         width: vw(12.78);
         height: vw(14.37);

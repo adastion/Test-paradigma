@@ -220,9 +220,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.info__item > p, .info__item > a {
-  max-width: 9.3055555556vw;
+  gap: 0 0.6944444444vw;
 }
 .info__item--contacts {
   -webkit-box-orient: vertical;
@@ -232,10 +230,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 13.9583333333vw;
+  width: 20.9027777778vw;
 }
 .info__icon {
-  max-width: 100%;
   width: 2.4305555556vw;
   height: 2.4305555556vw;
   border-radius: 50%;
@@ -248,10 +245,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.info__icon svg {
-  width: 0.9027777778vw;
-  height: 0.9027777778vw;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 2.4305555556vw;
+          flex: 0 0 2.4305555556vw;
 }
 .info__icon--bg, .info__icon--not-bg, .info__icon--calc {
   fill: #FD2016;
@@ -281,13 +277,22 @@ a {
 .info__icon--wa, .info__icon--telegram, .info__icon--viber {
   fill: #ffffff;
 }
+.info__icon--wa {
+  background: #20C863;
+}
 .info__icon--wa svg {
   width: 0.9430555556vw;
   height: 0.9423611111vw;
 }
+.info__icon--telegram {
+  background: #2FB3F3;
+}
 .info__icon--telegram svg {
   width: 0.8875vw;
   height: 0.7208333333vw;
+}
+.info__icon--viber {
+  background: #776EE9;
 }
 .info__icon--viber svg {
   width: 0.8875vw;
