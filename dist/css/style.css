@@ -136,8 +136,8 @@ a {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 9.7222222222vw 1fr 9.7222222222vw;
-  grid-template-columns: 9.7222222222vw 1fr 9.7222222222vw;
+  -ms-grid-columns: 7.2916666667vw 1fr 7.2916666667vw;
+  grid-template-columns: 7.2916666667vw 1fr 7.2916666667vw;
 }
 
 .content {
@@ -146,17 +146,17 @@ a {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
-  padding: 8.8888888889vw 7.9861111111vw;
+  padding: 6.6666666667vw 5.9895833333vw;
 }
 .content * {
   color: #ffffff;
 }
 .content__title {
-  font-size: 4.5138888889vw;
+  font-size: 3.3854166667vw;
   font-weight: 400;
 }
 .content__subtitle {
-  font-size: 1.875vw;
+  font-size: 1.40625vw;
 }
 .content__btn-wrap {
   display: -webkit-box;
@@ -170,14 +170,14 @@ a {
   grid-column: 2/3;
 }
 .header__logo {
-  width: 14.7916666667vw;
+  width: 11.09375vw;
 }
 
 .navigation {
-  font-size: 0.8333333333vw;
+  font-size: 0.625vw;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 1.5277777778vw 0;
+  padding: 1.1458333333vw 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,8 +193,8 @@ a {
 }
 
 .info {
-  font-size: 0.7638888889vw;
-  padding: 1.5277777778vw 0;
+  font-size: 0.5729166667vw;
+  padding: 1.1458333333vw 0;
 }
 .info__wrap {
   display: -webkit-box;
@@ -203,7 +203,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 0.6944444444vw;
+  gap: 0 0.5208333333vw;
 }
 .info__list {
   display: -webkit-box;
@@ -220,7 +220,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 0.6944444444vw;
+  gap: 0 0.5208333333vw;
 }
 .info__item--contacts {
   -webkit-box-orient: vertical;
@@ -230,11 +230,11 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 20.9027777778vw;
+  width: 15.6770833333vw;
 }
 .info__icon {
-  width: 2.4305555556vw;
-  height: 2.4305555556vw;
+  width: 1.8229166667vw;
+  height: 1.8229166667vw;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,8 +246,8 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 2.4305555556vw;
-          flex: 0 0 2.4305555556vw;
+      -ms-flex: 0 0 1.8229166667vw;
+          flex: 0 0 1.8229166667vw;
 }
 .info__icon--bg, .info__icon--not-bg, .info__icon--calc {
   fill: #FD2016;
@@ -256,23 +256,23 @@ a {
   background: url("../images/Карта.png");
 }
 .info__icon--bg svg {
-  width: 0.4208333333vw;
-  height: 0.5138888889vw;
+  width: 0.315625vw;
+  height: 0.3854166667vw;
 }
 .info__icon--not-bg {
   width: auto;
   height: auto;
 }
 .info__icon--not-bg svg {
-  width: 0.8333333333vw;
-  height: 1.0416666667vw;
+  width: 0.625vw;
+  height: 0.78125vw;
 }
 .info__icon--calc {
   background: #F8F8F8;
 }
 .info__icon--calc svg {
-  width: 1.0416666667vw;
-  height: 1.0416666667vw;
+  width: 0.78125vw;
+  height: 0.78125vw;
 }
 .info__icon--wa, .info__icon--telegram, .info__icon--viber {
   fill: #ffffff;
@@ -281,25 +281,25 @@ a {
   background: #20C863;
 }
 .info__icon--wa svg {
-  width: 0.9430555556vw;
-  height: 0.9423611111vw;
+  width: 0.7072916667vw;
+  height: 0.7067708333vw;
 }
 .info__icon--telegram {
   background: #2FB3F3;
 }
 .info__icon--telegram svg {
-  width: 0.8875vw;
-  height: 0.7208333333vw;
+  width: 0.665625vw;
+  height: 0.540625vw;
 }
 .info__icon--viber {
   background: #776EE9;
 }
 .info__icon--viber svg {
-  width: 0.8875vw;
-  height: 0.9979166667vw;
+  width: 0.665625vw;
+  height: 0.7484375vw;
 }
 .info__tel {
-  font-size: 1.3888888889vw;
+  font-size: 1.0416666667vw;
   font-weight: 700;
   color: #2A2A2A;
 }
