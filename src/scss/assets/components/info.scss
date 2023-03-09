@@ -11,17 +11,41 @@
   &__list {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
   &__item {
     display: flex;
     align-items: center;
     gap: 0 vw(10);
+    letter-spacing: 0.02em;
+    line-height: vw(18);
+
+    &--recomendations {
+      max-width: vw(134);
+    }
+
+    &--address {
+      max-width: vw(202);
+    }
+
+    &--map {
+      max-width: vw(142);
+    }
+    &--calc {
+      max-width: vw(193);
+    }
+
+    &--social {
+      max-width: vw(241);
+      flex-direction: row-reverse;
+    }
 
     &--contacts {
       flex-direction: column;
-      justify-content: center;
-      width: vw(301);
+      gap: vw(6);
+      max-width: vw(201);
     }
   }
 
@@ -103,11 +127,50 @@
   }
 
   &__chedule {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: vw(-10);
+      width: vw(4);
+      height: vw(4);
+      border-radius: 50%;
+      background: $mountain_meadow;
+    }
   }
 
   &__tel {
     font-size: vw(20);
     font-weight: 700;
     color: $mine_shaft;
+    padding-right: vw(18);
+    position: relative;
+
+    & svg {
+      fill: $scarlet;
+      width: vw(9);
+      height: vw(5);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: vw(2);
+    }
+  }
+
+  &__call {
+    position: relative;
+
+    & svg {
+      fill: $scarlet;
+      width: vw(9);
+      height: vw(5);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: vw(-20);
+    }
   }
 }

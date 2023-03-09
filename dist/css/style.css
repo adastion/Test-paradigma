@@ -168,6 +168,8 @@ a {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -webkit-box-shadow: -3px 4px 4px -2px rgba(0, 0, 0, 0.25);
+          box-shadow: -3px 4px 4px -2px rgba(0, 0, 0, 0.25);
 }
 .header__logo {
   width: 11.09375vw;
@@ -175,7 +177,7 @@ a {
 
 .navigation {
   font-size: 0.625vw;
-  font-weight: 600;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   padding: 1.1458333333vw 0;
   display: -webkit-box;
@@ -187,8 +189,10 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-top: 0.0520833333vw solid #aaaaaa;
 }
 .navigation__link {
+  font-weight: 600;
   color: #2A2A2A;
 }
 
@@ -212,6 +216,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 .info__item {
   display: -webkit-box;
@@ -221,16 +229,35 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 0 0.5208333333vw;
+  letter-spacing: 0.02em;
+  line-height: 0.9375vw;
+}
+.info__item--recomendations {
+  max-width: 6.9791666667vw;
+}
+.info__item--address {
+  max-width: 10.5208333333vw;
+}
+.info__item--map {
+  max-width: 7.3958333333vw;
+}
+.info__item--calc {
+  max-width: 10.0520833333vw;
+}
+.info__item--social {
+  max-width: 12.5520833333vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 .info__item--contacts {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 15.6770833333vw;
+  gap: 0.3125vw;
+  max-width: 10.46875vw;
 }
 .info__icon {
   width: 1.8229166667vw;
@@ -298,8 +325,51 @@ a {
   width: 0.665625vw;
   height: 0.7484375vw;
 }
+.info__chedule {
+  position: relative;
+}
+.info__chedule::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -0.5208333333vw;
+  width: 0.2083333333vw;
+  height: 0.2083333333vw;
+  border-radius: 50%;
+  background: #20C863;
+}
 .info__tel {
   font-size: 1.0416666667vw;
   font-weight: 700;
   color: #2A2A2A;
+  padding-right: 0.9375vw;
+  position: relative;
+}
+.info__tel svg {
+  fill: #FD2016;
+  width: 0.46875vw;
+  height: 0.2604166667vw;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0.1041666667vw;
+}
+.info__call {
+  position: relative;
+}
+.info__call svg {
+  fill: #FD2016;
+  width: 0.46875vw;
+  height: 0.2604166667vw;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -1.0416666667vw;
 }
