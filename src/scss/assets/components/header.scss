@@ -1,6 +1,6 @@
 .header {
   grid-column: 2/3;
-  box-shadow: -3px 4px 4px -2px rgba(0, 0, 0, 0.25);
+  box-shadow: -3px 4px 4px -2px rgba($alabaster, 0.25);
 
   &__logo {
     width: vw(213);

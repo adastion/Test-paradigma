@@ -1,0 +1,33 @@
+.advantages {
+  display: flex;
+  margin-top: vw(124);
+
+  &__item {
+    position: relative;
+    padding: vw(34) vw(95);
+    font-size: vw(17);
+    letter-spacing: 0.02em;
+    line-height: vw(27);
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:not(:last-child) {
+      border-right: vw(1) solid $alabaster;
+    }
+
+    & svg {
+      position: absolute;
+      top: 0;
+      left: vw(95);
+      width: vw(13.2);
+      height: vw(9.6);
+      fill: $scarlet;
+    }
+  }
+}
