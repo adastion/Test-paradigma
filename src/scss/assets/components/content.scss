@@ -3,21 +3,31 @@
   background-size: cover;
   grid-column: 2/4;
   padding: vw(128) vw(115) 0;
-
+  
+  &__wrap {
+    max-width: vw(1011);
+  }
+  
   & * {
     color: $white;
   }
-
+  
   &__title {
     font-size: vw(65);
     font-weight: 400;
+    line-height: vw(95);
+    letter-spacing: 0.02em;
   }
   
   &__subtitle {
     font-size: vw(27);
+    line-height: vw(45);
+    letter-spacing: 0.02em;
+    margin-top: vw(45);
   }
-
+  
   &__btn-wrap {
     display: flex;
+    margin-top: vw(45);
   }
 }

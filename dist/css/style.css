@@ -148,20 +148,29 @@ a {
   grid-column: 2/4;
   padding: 6.6666666667vw 5.9895833333vw 0;
 }
+.content__wrap {
+  max-width: 52.65625vw;
+}
 .content * {
   color: #ffffff;
 }
 .content__title {
   font-size: 3.3854166667vw;
   font-weight: 400;
+  line-height: 4.9479166667vw;
+  letter-spacing: 0.02em;
 }
 .content__subtitle {
   font-size: 1.40625vw;
+  line-height: 2.34375vw;
+  letter-spacing: 0.02em;
+  margin-top: 2.34375vw;
 }
 .content__btn-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 2.34375vw;
 }
 
 .header {
