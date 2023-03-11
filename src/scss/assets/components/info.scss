@@ -31,8 +31,9 @@
     }
 
     &--map {
-      max-width: vw(142);
+      width: vw(160);
     }
+
     &--calc {
       max-width: vw(193);
     }
@@ -47,6 +48,11 @@
       gap: vw(6);
       max-width: vw(201);
     }
+  }
+
+  &__inner-btn {
+    display: flex;
+    flex-direction: column;
   }
 
   &__icon {

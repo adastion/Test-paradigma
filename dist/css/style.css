@@ -114,7 +114,8 @@ html {
   height: 100%;
 }
 
-a {
+a,
+button {
   text-decoration: none;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -170,6 +171,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 1.1458333333vw;
   margin-top: 2.34375vw;
 }
 
@@ -177,8 +179,8 @@ a {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -webkit-box-shadow: -3px 4px 4px -2px rgba(248, 248, 248, 0.25);
-          box-shadow: -3px 4px 4px -2px rgba(248, 248, 248, 0.25);
+  -webkit-box-shadow: -3px 4px 4px -2px #aaaaaa;
+          box-shadow: -3px 4px 4px -2px #aaaaaa;
 }
 .header__logo {
   width: 11.09375vw;
@@ -204,7 +206,101 @@ a {
   font-weight: 600;
   color: #2A2A2A;
 }
+.navigation__link:hover {
+  color: #CB2720;
+}
 
+.btn-dotted,
+.btn-content {
+  border: none;
+  outline: none;
+  background: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-dotted {
+  color: #2A2A2A;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.btn-dotted:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0.1041666667vw;
+  border-bottom: 0.1041666667vw dotted #FD2016;
+  margin-top: 0.2083333333vw;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.btn-dotted:hover::before {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.btn-content {
+  width: 20.8333333333vw;
+  height: 5.2083333333vw;
+  border-radius: 2.6041666667vw;
+  padding: 0 2.8125vw;
+  color: #ffffff;
+  background: #FD2016;
+  font-size: 0.8333333333vw;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.25vw;
+}
+.btn-content svg {
+  width: 1.1979166667vw;
+  height: 1.1979166667vw;
+  fill: #ffffff;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.btn-content:hover {
+  background: #ac0901;
+}
+.btn-content:hover svg {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.btn-content--transparent {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-shadow: inset 0 0 0 0.1041666667vw gray;
+          box-shadow: inset 0 0 0 0.1041666667vw gray;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.btn-content--transparent svg {
+  width: 1.5625vw;
+  height: 1.5625vw;
+  fill: #20C863;
+  position: absolute;
+  left: 1.4583333333vw;
+}
+.btn-content--transparent:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
 .info {
   font-size: 0.5729166667vw;
   padding: 1.1458333333vw 0;
@@ -248,7 +344,7 @@ a {
   max-width: 10.5208333333vw;
 }
 .info__item--map {
-  max-width: 7.3958333333vw;
+  width: 8.3333333333vw;
 }
 .info__item--calc {
   max-width: 10.0520833333vw;
@@ -267,6 +363,15 @@ a {
           flex-direction: column;
   gap: 0.3125vw;
   max-width: 10.46875vw;
+}
+.info__inner-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .info__icon {
   width: 1.8229166667vw;
@@ -396,15 +501,6 @@ a {
   letter-spacing: 0.02em;
   line-height: 1.40625vw;
 }
-.advantages__item:first-child {
-  padding-left: 0;
-}
-.advantages__item:last-child {
-  padding-right: 0;
-}
-.advantages__item:not(:last-child) {
-  border-right: 0.0520833333vw solid #F8F8F8;
-}
 .advantages__item svg {
   position: absolute;
   top: 0;
@@ -412,4 +508,16 @@ a {
   width: 0.6875vw;
   height: 0.5vw;
   fill: #FD2016;
+}
+.advantages__item:first-child {
+  padding-left: 0;
+}
+.advantages__item:first-child svg {
+  left: 0;
+}
+.advantages__item:last-child {
+  padding-right: 0;
+}
+.advantages__item:not(:last-child) {
+  border-right: 0.0520833333vw solid #F8F8F8;
 }

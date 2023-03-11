@@ -15,7 +15,8 @@ html {
   @return calc($val / $base) * 100vmin;
 }
 
-a {
+a,
+button {
   text-decoration: none;
   transition: all 0.3s;
 }

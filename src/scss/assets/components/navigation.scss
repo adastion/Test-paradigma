@@ -11,5 +11,9 @@
   &__link {
     font-weight: 600;
     color: $mine_shaft;
+
+    &:hover {
+      color: $tunderbird;
+    }
   }
 }
