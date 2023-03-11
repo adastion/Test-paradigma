@@ -44,8 +44,8 @@
   line-height: vw(24);
 
   & svg {
-    width: vw(23);
-    height: vw(23);
+    width: vw(30);
+    height: vw(30);
     fill: $white;
     transition: transform 0.3s;
   }
@@ -74,10 +74,6 @@
 
     &:hover {
       background: rgba($black, 0.8);
-
-      & svg {
-        
-      }
     }
   }
 }

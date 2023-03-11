@@ -186,6 +186,64 @@ button {
   width: 11.09375vw;
 }
 
+.scroll {
+  position: relative;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+.scroll::after {
+  content: "";
+  position: absolute;
+  top: 15.625vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 25.4166666667vw;
+  border: 0.078125vw solid #EFEFEF;
+  -webkit-box-shadow: 0 0 0.1041666667vw #dddddd;
+          box-shadow: 0 0 0.1041666667vw #dddddd;
+}
+.scroll__tetxt {
+  -webkit-transform: rotate(-90deg) translateX(-130%);
+      -ms-transform: rotate(-90deg) translateX(-130%);
+          transform: rotate(-90deg) translateX(-130%);
+  font-size: 0.78125vw;
+  font-weight: 800;
+  color: #EFEFEF;
+  text-shadow: -0.15625vw -0.0520833333vw 0.15625vw #999999;
+}
+.scroll__mouse {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 11.9791666667vw;
+}
+.scroll__mouse svg {
+  width: 0.9895833333vw;
+  height: 1.6666666667vw;
+  fill: #EFEFEF;
+}
+.scroll__mouse::before {
+  content: "";
+  position: absolute;
+  top: 0.5208333333vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0.2083333333vw;
+  height: 0.2083333333vw;
+  border: 0.1041666667vw solid #FD2016;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+}
+
 .navigation {
   font-size: 0.625vw;
   letter-spacing: 0.15em;
@@ -203,7 +261,7 @@ button {
   border-top: 0.0520833333vw solid #aaaaaa;
 }
 .navigation__link {
-  font-weight: 600;
+  font-weight: 700;
   color: #2A2A2A;
 }
 .navigation__link:hover {
@@ -264,8 +322,8 @@ button {
   line-height: 1.25vw;
 }
 .btn-content svg {
-  width: 1.1979166667vw;
-  height: 1.1979166667vw;
+  width: 1.5625vw;
+  height: 1.5625vw;
   fill: #ffffff;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
@@ -301,6 +359,7 @@ button {
 .btn-content--transparent:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
 .info {
   font-size: 0.5729166667vw;
   padding: 1.1458333333vw 0;
@@ -474,18 +533,14 @@ button {
   right: 0.1041666667vw;
 }
 .info__call {
-  position: relative;
+  font-size: 0.625vw;
+  font-weight: normal;
 }
 .info__call svg {
-  fill: #FD2016;
   width: 0.46875vw;
   height: 0.2604166667vw;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: -1.0416666667vw;
+  fill: #FD2016;
+  margin-left: 0.5208333333vw;
 }
 
 .advantages {

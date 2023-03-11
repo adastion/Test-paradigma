@@ -167,16 +167,14 @@
   }
 
   &__call {
-    position: relative;
+    font-size: vw(12);
+    font-weight: normal;
 
     & svg {
-      fill: $scarlet;
       width: vw(9);
       height: vw(5);
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: vw(-20);
+      fill: $scarlet;
+      margin-left: vw(10);
     }
   }
 }
