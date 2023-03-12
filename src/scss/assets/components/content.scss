@@ -57,6 +57,7 @@
     @include small-desktop-and-less {
       flex-direction: column;
       gap: vmin(15);
+      align-items: center;
       margin-top: vmin(29);
     }
   }

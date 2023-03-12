@@ -220,6 +220,9 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 4.6875vmin;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 9.0625vmin;
   }
 }
@@ -421,15 +424,32 @@ button {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+@media (max-width: 992px) {
+  .btn-content {
+    width: 86.25vmin;
+    height: 18.75vmin;
+    border-radius: 9.375vmin;
+    padding: 0 3.75vmin;
+    background: #FD2016;
+    font-size: 3.125vmin;
+    letter-spacing: 0.04em;
+    line-height: 4.6875vmin;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .btn-content svg {
+    display: none;
+  }
+}
 .btn-content--transparent {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
   -webkit-box-shadow: inset 0 0 0 0.1041666667vw gray;
           box-shadow: inset 0 0 0 0.1041666667vw gray;
   background: rgba(0, 0, 0, 0.5);
   position: relative;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .btn-content--transparent svg {
   width: 1.5625vw;
@@ -438,8 +458,22 @@ button {
   position: absolute;
   left: 1.4583333333vw;
 }
+.btn-content--transparent span {
+  margin-left: 0.3125vw;
+}
 .btn-content--transparent:hover {
   background: rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 992px) {
+  .btn-content--transparent {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .btn-content--transparent span {
+    margin-left: 1.875vmin;
+    color: #20C863;
+  }
 }
 
 .info {
