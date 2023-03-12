@@ -5,6 +5,10 @@ html {
   font-weight: normal;
   line-height: normal;
   height: 100%;
+
+  @include small-desktop-and-less {
+    font-size: 62.5%;
+  }
 }
 
 @function vw($val, $base: 1920) {
@@ -13,6 +17,10 @@ html {
 
 @function vmin($val, $base: 320) {
   @return calc($val / $base) * 100vmin;
+}
+
+@function rem($val, $base: 16) {
+  @return calc($val / $base)
 }
 
 a,

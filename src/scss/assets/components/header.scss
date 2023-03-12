@@ -1,8 +1,17 @@
 .header {
   grid-column: 2/3;
-  box-shadow: -3px 4px 4px -2px lighten($mine_shaft, 50%);
+  box-shadow: vw(-3) vw(4) vw(4) vw(-2) lighten($mine_shaft, 50%);
+
+  @include small-desktop-and-less {
+    grid-column: 1/4;
+    box-shadow: none;
+  }
 
   &__logo {
     width: vw(213);
+
+    @include small-desktop-and-less {
+      min-width: vmin(92);
+    }
   }
 }

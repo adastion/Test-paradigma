@@ -3,32 +3,61 @@
   background-size: cover;
   grid-column: 2/4;
   padding: vw(128) vw(115) 0;
-  
+
+  @include small-desktop-and-less {
+    grid-column: 1/4;
+    padding: vmin(22);
+    background: none;
+  }
+
   &__wrap {
     max-width: vw(1011);
+
+    @include small-desktop-and-less {
+      max-width: 100%;
+    }
   }
-  
+
   & * {
     color: $white;
   }
-  
+
   &__title {
     font-size: vw(65);
     font-weight: 400;
     line-height: vw(95);
     letter-spacing: 0.02em;
+
+    @include small-desktop-and-less {
+      font-size: vmin(20);
+      font-weight: 400;
+      line-height: vmin(29);
+    }
   }
-  
+
   &__subtitle {
     font-size: vw(27);
     line-height: vw(45);
     letter-spacing: 0.02em;
     margin-top: vw(45);
+    
+    @include small-desktop-and-less {
+      font-size: vmin(12);
+      line-height: vmin(18);
+      letter-spacing: 0.02em;
+      margin-top: vmin(28);
+    }
   }
-  
+
   &__btn-wrap {
     display: flex;
     gap: vw(22);
     margin-top: vw(45);
+
+    @include small-desktop-and-less {
+      flex-direction: column;
+      gap: vmin(15);
+      margin-top: vmin(29);
+    }
   }
 }

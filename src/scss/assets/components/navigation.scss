@@ -8,6 +8,10 @@
   justify-content: space-between;
   border-top: vw(1) solid lighten($mine_shaft, 50%);
 
+  @include small-desktop-and-less {
+    display: none;
+  }
+
   &__link {
     font-weight: 700;
     color: $mine_shaft;

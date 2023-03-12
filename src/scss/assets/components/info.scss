@@ -2,10 +2,19 @@
   font-size: vw(11);
   padding: vw(22) 0;
 
+  @include small-desktop-and-less {
+    padding: vmin(12) vmin(22) 0;
+  }
+
   &__wrap {
     display: flex;
     align-items: center;
     gap: 0 vw(10);
+
+    @include small-desktop-and-less {
+      justify-content: space-between;
+      max-height: vmin(48);
+    }
   }
 
   &__list {
@@ -13,6 +22,14 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+
+    @include small-desktop-and-less {
+      width: auto;
+
+      & li:not(:last-child) {
+        display: none;
+      }
+    }
   }
 
   &__item {
@@ -47,6 +64,13 @@
       flex-direction: column;
       gap: vw(6);
       max-width: vw(201);
+
+      @include small-desktop-and-less {
+        gap: vmin(6);
+        font-size: vmin(6);
+        max-width: 100%;
+        color: $white;
+      }
     }
   }
 
@@ -146,6 +170,17 @@
       border-radius: 50%;
       background: $mountain_meadow;
     }
+
+    @include small-desktop-and-less {
+      font-size: vmin(6);
+      line-height: vmin(10);
+
+      &::before {
+        left: vmin(-10);
+        width: vmin(4);
+        height: vmin(4);
+      }
+    }
   }
 
   &__tel {
@@ -154,6 +189,11 @@
     color: $mine_shaft;
     padding-right: vw(18);
     position: relative;
+
+    @include small-desktop-and-less {
+      font-size: vmin(12);
+      color: $white;
+    }
 
     & svg {
       fill: $scarlet;
@@ -175,6 +215,17 @@
       height: vw(5);
       fill: $scarlet;
       margin-left: vw(10);
+    }
+
+    @include small-desktop-and-less {
+      color: $white;
+      font-size: vmin(6);
+
+      & svg {
+        width: vmin(6);
+        height: vmin(6);
+        margin-left: vmin(4);
+      }
     }
   }
 }

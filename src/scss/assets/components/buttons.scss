@@ -29,6 +29,15 @@
   &:hover::before {
     transform: translateX(-50%);
   }
+
+  @include small-desktop-and-less {
+    padding-bottom: vmin(4);
+
+    &:before {
+      height: vmin(2);
+      border-bottom: vmin(2) dotted $scarlet;
+    }
+  }
 }
 
 .btn-content {
