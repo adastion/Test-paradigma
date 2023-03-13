@@ -6,15 +6,15 @@
 
   @include small-desktop-and-less {
     grid-column: 1/4;
-    padding: vmin(22);
+    padding: vmin(12) vmin(22) 0;
     background: none;
   }
 
   &__wrap {
-    max-width: vw(1011);
+    width: vw(1011);
 
     @include small-desktop-and-less {
-      max-width: 100%;
+      width: vmin(276);
     }
   }
 
@@ -40,7 +40,7 @@
     line-height: vw(45);
     letter-spacing: 0.02em;
     margin-top: vw(45);
-    
+
     @include small-desktop-and-less {
       font-size: vmin(12);
       line-height: vmin(18);

@@ -2,6 +2,18 @@
   display: flex;
   margin-top: vw(124);
 
+  @include small-desktop-and-less {
+    background: $white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: vmin(49) vmin(-22) 0;
+    padding: vmin(15) 0;
+
+    & * {
+      color: $mine_shaft;
+    }
+  }
+
   &__item {
     position: relative;
     padding: vw(34) vw(95);
@@ -32,6 +44,35 @@
 
     &:not(:last-child) {
       border-right: vw(1) solid $alabaster;
+    }
+
+    @include small-desktop-and-less {
+      font-size: vmin(10);
+      letter-spacing: 0.02em;
+      line-height: vmin(15);
+      padding: vmin(22);
+
+      & svg {
+        width: vmin(13.2);
+        height: vmin(9.6);
+        left: vmin(22);
+      }
+
+      &:first-child,
+      &:last-child {
+        padding: 0;
+        padding: vmin(22);
+      }
+
+      &:first-child {
+        & svg {
+          left: vmin(22);
+        }
+      }
+
+      &:not(:last-child) {
+        border: none;
+      }
     }
   }
 }

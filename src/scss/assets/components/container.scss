@@ -4,5 +4,6 @@
 
   @include small-desktop-and-less {
     background: url('../images/bg.jpg') no-repeat;
+    background-size: cover;
   }
 }
